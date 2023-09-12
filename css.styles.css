@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: hsl(223, 74%, 92%);
+	max-width: 1440px;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+.order-summary-background {
+	top: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.order-summary {
+	background-color: #fff;
+	width: 450px;
+	height: 700px;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.order-summary__details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 30px;
+	margin-top: 40px;
+	padding-right: 45px;
+	padding-left: 45px;
+}
+
+.order-summary__title {
+	font-size: 2rem;
+	color: hsl(223, 36%, 24%);
+	font-weight: 900;
+}
+
+.order-summary__description {
+	margin-top: -10px;
+	color: hsl(200, 10%, 57%);
+	line-height: 25px;
+	letter-spacing: 0.5px;
+}
+
+.order-summary__price-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(230, 75%, 98%);
+	border-radius: 10px;
+	width: 100%;
+	height: 90px;
+}
+
+.order-summary__music-icon {
+	margin-right: 30px;
+}
+
+.order-summary__plan-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-right: 90px;
+	margin-left: -10px;
+	gap: 6px;
+}
+
+.order-summary__plan {
+	color: hsl(223, 36%, 24%);
+	font-weight: 900;
+}
+
+.order-summary__plan-price {
+	color: hsl(200, 10%, 57%);
+}
+
+.order-summary__change-plan-btn {
+	font-weight: 700;
+	color: hsl(245, 68%, 46%);
+}
+
+.order-summary__change-plan-btn:hover {
+	color: hsl(245, 83%, 68%);
+	text-decoration: none;
+}
+
+.order-summary__payment-btn {
+	width: 100%;
+	border-radius: 12px;
+	height: 50px;
+	border: none;
+	background-color: hsl(245, 82%, 56%);
+	color: #fff;
+	font-weight: 700;
+	font-size: 17px;
+	box-shadow: 0 10px 30px hsla(245, 82%, 56%, 0.411);
+}
+
+.order-summary__payment-btn:hover {
+	cursor: pointer;
+	background-color: hsl(245, 83%, 68%);
+}
+
+.order-summary__cancel-btn {
+	text-decoration: none;
+	color: #838383;
+	font-weight: 900;
+}
+
+.order-summary__cancel-btn:hover {
+	cursor: pointer;
+	color: hsl(223, 36%, 24%);
+}

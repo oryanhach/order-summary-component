@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<link rel="stylesheet" href="css.styles.css" />
+		<title>Frontend Mentor | Order summary card</title>
+	</head>
+	<body>
+		<img
+			class="order-summary-background"
+			src="images/pattern-background-desktop.svg"
+			alt="waves background painting"
+		/>
+		<main class="order-summary">
+			<header class="order-summary__header">
+				<img
+					class="order-summary__header-img"
+					src="images/illustration-hero.svg"
+					alt="woman dancing paint"
+				/>
+			</header>
+			<article class="order-summary__card">
+				<div class="order-summary__details">
+					<h1 class="order-summary__title">Order Summary</h1>
+					<p class="order-summary__description">
+						You can now listen to millions of songs, audiobooks, and
+						podcasts on any device anywhere you like!
+					</p>
+					<section class="order-summary__price-section">
+						<img
+							class="order-summary__music-icon"
+							src="images/icon-music.svg"
+							alt="music icon"
+						/>
+						<div class="order-summary__plan-container">
+							<span class="order-summary__plan">Annual Plan</span>
+							<span class="order-summary__plan-price"
+								>$59.99/year</span
+							>
+						</div>
+						<a class="order-summary__change-plan-btn" href="#"
+							>Change</a
+						>
+					</section>
+					<button class="order-summary__payment-btn">
+						Proceed to Payment
+					</button>
+					<a href="#" class="order-summary__cancel-btn">
+						Cancel Order
+					</a>
+				</div>
+			</article>
+		</main>
+	</body>
 </html>
