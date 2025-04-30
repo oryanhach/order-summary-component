@@ -117,10 +117,16 @@ h3 {
 
 h2 {
 	font-size: var(--fs-700);
+	font-weight: var(--fw-900);
 	color: var(--clr-neutral-800);
 }
 
 /* composition */
+
+.grid-flow {
+	display: grid;
+	gap: 1em;
+}
 
 /* utility */
 
@@ -158,6 +164,14 @@ h2 {
 
 .text-align-right {
 	text-align: right;
+}
+
+.fw-bold {
+	font-weight: var(--fw-700);
+}
+
+.fw-black {
+	font-weight: var(--fw-900);
 }
 
 /* block */
